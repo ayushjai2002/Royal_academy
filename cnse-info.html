@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <title>Royal Academy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #F9F785;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-2">
+            <h2 class="m-0 text-primary"><img class="img-fluid" src="img/logooo.png" alt="Royal Academy"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active text-primary" id="underr"><b>Home</b></a>
+				<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle text-primary" id="underr" data-bs-toggle="dropdown"><b>About us</b></a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="cp.html" class="dropdown-item" id="under">  Chair Person</a>
+                        <a href="s.html" class="dropdown-item" id="under">  Secretary</a>
+                        <a href="p.html" class="dropdown-item" id="under">  Principal</a>
+						<a href="i.html" class="dropdown-item" id="under">  Infrastructure</a>
+                        <a href="CBSE-Mandatory-Disclosure.html" class="dropdown-item" id="under">  CBSE Mandatory Disclosure</a>
+						<a href="vm.html" class="dropdown-item" id="under">  Vision & Mission</a>
+                    </div>
+                </div>
+				<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle text-primary" id="underr" data-bs-toggle="dropdown"><b>Academics</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <a href="ppw.html" class="dropdown-item" id="under"> Pre Primary Wing</a>
+                        <a href="pw.html" class="dropdown-item" id="under">  Primary Wing</a>
+                        <a href="mw.html" class="dropdown-item" id="under">  Middle Wing</a>
+						<a href="sw.html" class="dropdown-item" id="under">  Senior Wing</a>
+						<a href="calander.html" class="dropdown-item" id="under">  School Calander</a>
+                        <a href="ppw.html" class="dropdown-item" id="under"> School Timing </a>
+                        <a href="pw.html" class="dropdown-item" id="under">  School Uniform</a>
+                        <a href="mw.html" class="dropdown-item" id="under"> Rules & Regulations</a>
+						<a href="sw.html" class="dropdown-item" id="under">  Feculty </a>
+						<a href="calander.html" class="dropdown-item" id="under">  Counselling Cell </a>
+                        <a href="sw.html" class="dropdown-item" id="under">  Board Results </a>
+						<a href="calander.html" class="dropdown-item" id="under">  Transfer Certificate </a>
+					</div>
+                </div>
+				<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle text-primary" id="underr" data-bs-toggle="dropdown"><b>Admissions</b></a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="procedure.html" class="dropdown-item" id="under">  Procedure</a>
+                        <a href="fee.html" class="dropdown-item" id="under">  Fee Structure</a>
+                        <a href="cnse-info.html" class="dropdown-item" id="under">  CBSE Information</a>
+						<a href="FAQ.html" class="dropdown-item" id="under">  FAQ</a>
+                    </div>
+                </div>
+                <a href="Gallery.html" class="nav-item nav-link text-primary" id="underr"><b>Gallery</b></a>
+                <!-- <a href="CBSE-Mandatory-Disclosure.html" class="nav-item nav-link active text-primary" id="underr"><b>CBSE Mandatory Disclosure</b></a> -->
+				<a href="vt.html" class="nav-item nav-link text-primary" id="underr"><b>Virtual Tour</b></a>
+				<a href="contactus.html" class="nav-item nav-link text-primary" id="underr"><b>Contact Us</b></a>
+                <a href=" https://currentdiary.com/app-for-school/login-school/ " class="nav-item nav-link text-primary" id="underr"><b>Parents Zone</b></a>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+     <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown"><u>CBSE MANDATORY DISCLOSURE</u></h1>
+                    <nav aria-label="breadcrumb">
+                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3"><u>MANDATORY PUBLIC DISCLOSURE</u></h6>
+            </div>
+            <div class="row g-4">
+<div style="text-align:right;color:GRAY;"><strong>APPENDIX - IX</strong></div><hr>
+<div style="text-align:left;color:GRAY;"><strong>A:</strong> <span><strong><u>GENERAL INFORMATION:</u></strong></span></div>
+<table width="100%" border="1" color="#000" cellpadding="1" cellspacing="1" style=color:black;font-size:14px;background-color:#FCFCFC;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>INFORMATION</strong>
+</td>
+<td>
+<strong>DETAILS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+NAME OF THE SCHOOL
+</td>
+<td>
+ROYAL ACADEMY
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+AFFILIATION NO.(IF APPLICABLE)
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+SCHOOL CODE (IF APPLICABLE)
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+COMPLETE ADDRESS WITH PIN CODE
+</td>
+<td>
+SIDDHAN ROAD, DURJANPURA, LALITPUR, UTTAR PRADESH 284403
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+PRINCIPAL NAME :
+</td>
+<td>
+Mr. SANJEEV NAMDEO
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+PRINCIPAL QUALIFICATION :
+</td>
+<td>
+M.Sc., B.ED.
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+SCHOOL EMAIL ID
+</td>
+<td>
+ROYALACADEMYLTP@GMAIL.COM 
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+CONTACT DETAILS (LANDLINE/MOBILE)
+</td>
+<td>
++91-9451555916
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:left;color:GRAY;"><strong>B:</strong> <span><strong><u>DOCUMENTS AND INFORMATION:</u></strong></span></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style=color:black;font-size:14px;background-color:#ffffff;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>DOCUMENTS/INFORMATION</strong>
+</td>
+<td>
+<strong>UPLOADED DOCUMENTS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY
+</td>
+<td>
+<a href="" style=color:black;target="_blank"></a>
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/1.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/1.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/2.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/2.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/3.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/3.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/4.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/4.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/5.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/5.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION OR SELF CERTIFICATION BY SCHOOL
+<td>
+<a href="https://royalacademy.net.in/cbse/6.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/6.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/7.pdf"style=color:black; target="_blank">https://royalacademy.net.in/cbse/7.pdf</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:left; margin-bottom: 15px;color:GRAY;font-size:12px;"><strong>NOTE: </strong> <span>THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMETNS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL. IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.</span></div>
+<div style="text-align:left;color:GRAY;"><strong>C:</strong> <span><strong><u>RESULT AND ACADEMICS:</u></strong></span></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style=color:black;font-size:14px;background-color:#ffffff;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>DOCUMENTS/INFORMATION</strong>
+</td>
+<td>
+<strong>UPLOADED DOCUMENTS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+FEE STRUCTURE OF THE SCHOOL
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/fee.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/fee.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+ANNUAL ACADEMIC CALANDER.
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/8.pdf" style=color:black; target="_blank">https://royalacademy.net.in/cbse/8.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/9.pdf" style=color:black;target="_blank">https://royalacademy.net.in/cbse/9.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS
+</td>
+<td>
+<a href="https://royalacademy.net.in/cbse/10.pdf"style=color:black; target="_blank">https://royalacademy.net.in/cbse/10.pdf</a>
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABLILITY
+</td>
+<td>
+<a href="#"style=color:black; target="_blank"></a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="text-align:left;color:GRAY;"><strong>D:</strong> <span><strong><u>STAFF (TEACHING)</u></strong></span></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style=color:black;font-size:14px;background-color:#ffffff;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>INFORMATION</strong>
+</td>
+<td>
+<strong>DETAILS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+PRINCIPAL
+</td>
+<td>
+Mr. SANJEEV NAMDEO
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>TOTAL NO. OF TEACHERS
+<table>
+<tr>
+<td>PGT</td>
+</tr>
+<tr>
+<td>TGT</td>
+</tr>
+<tr>
+<td>PRT</td>
+</tr>
+</table>
+</td>
+<td>
+15
+<table>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>14</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+TEACHERS SECTION RATIO
+</td>
+<td>
+1:1.5
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+DETAILS OF SPECIAL EDUCATOR
+</td>
+<td>
+NO 
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+DETAILS OF COUNSELLOR AND WELNESS TEACHER
+</td>
+<td>
+NO
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:left;color:GRAY;"><strong>RESULT CLASS: X</strong></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style=color:black;font-size:14px;background-color:#ffffff;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>YEAR</strong>
+</td>
+<td>
+<strong> NO. OF REGISTERED STUDENTS</strong>
+</td>
+<td>
+<strong> NO. OF STUDENTS PASSED </strong>
+</td>
+<td>
+<strong> PASS PERCENTAGE</strong>
+</td>
+<td>
+<strong> REMARKS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+
+<tr>
+<td>
+1.
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:left;color:GRAY;"><strong>RESULT CLASS: XII</strong></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style=color:black;font-size:14px;background-color:#ffffff;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>YEAR</strong>
+</td>
+<td>
+<strong> NO. OF REGISTERED STUDENTS</strong>
+</td>
+<td>
+<strong> NO. OF STUDENTS PASSED </strong>
+</td>
+<td>
+<strong> PASS PERCENTAGE</strong>
+</td>
+<td>
+<strong> REMARKS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td>
+1.
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:left;color:GRAY;"><strong>E:</strong> <span><strong><u>SCHOOL INFRASTRUCTURE:</u></strong></span></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style=color:black;font-size:14px;background-color:#ffffff;>
+<thead style="background-color:#052538; color:white;font-size:14px;">
+<tr>
+<td>
+<strong>S.NO.</strong>
+</td>
+<td>
+<strong>INFORMATION</strong>
+</td>
+<td>
+<strong>DETAILS</strong>
+</td>
+</tr>
+</thead>
+</tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)
+</td>
+<td>
+12140
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)
+</td>
+<td>
+16 & 54
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)
+</td>
+<td>
+5 & 59
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+INTERNET FACILITY (Y/N)
+</td>
+<td>
+Yes
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+NO. OF GIRLS TOILETS
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+NO. OF BOYS TOILETS
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL
+</td>
+<td>
+<a href="" style=color:black;target="_blank"></a>
+</td>
+</tr>
+</tbody>
+</table>
+   </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+   <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Links</h4>
+                    <a class="btn btn-link" href="">Virtual Tour</a>
+                    <a class="btn btn-link" href="">School Calander</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Reach </h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Siddhan Road, Lalitpur (UP)</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:08737906849">+91 87379 06849 (Click to call)</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href = "mailto: contactus@royalacademy.net.in">contactus@royalacademy.net.in</a></p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/royalacademyltp"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@royalacademy2018"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/royalacademy.net.in?igsh=OXQyYTdoZXpmbW1q"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G1.jpg" alt=""></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G3.jpg" alt=""></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G4.jpg" alt=""></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G6.jpg" alt=""></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G5.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Subscribe to be in touch.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Royal Academy</a>, All Right Reserved.
+
+                        <!--/*** Thank you for your support. ***/-->
+                         <a class="border-bottom" href="https://htmlcodex.com"></a><br><br>
+                         <a class="border-bottom" href="https://themewagon.com"></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="tel:09109019090">Developed by Neeraj Shrivastava </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
