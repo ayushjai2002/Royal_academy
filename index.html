@@ -1,327 +1,374 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Royal Academy</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <title>Royal Academy</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+    rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-	
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-toggler navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-2">
-          <h2 class="m-0 text-primary"><img class="img-fluid" src="img/logooo.png" alt="Royal Academy"></h2>
-      </a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">Dropdown</a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-              </ul>
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-          </div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-toggler navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Logo Section -->
+      <div class="col-md-2 col-sm-3 col-3">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="DPS Chhatarpur (Madhya Pradesh)" class="img-fluid">
+        </a>
       </div>
+      <!-- Navbar Content -->
+      <div id="myNav" class="fullscreen-menu">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+      
+        <a href="#">ABOUT US</a>
+        <a href="#">OUR SCHOOL</a>
+        <a href="#">PROMOTERS MESSAGE</a>
+        <a href="#">PRINCIPAL MESSAGE</a>
+        <a href="#">FROM VICE PRINCIPAL DESK</a>
+        <a href="#">FACULTY</a>
+        <a href="#">MANDATORY DISCLOSURE</a>
+      
+        <div class="dropdown">
+          <a class="dropdown-toggle" data-bs-toggle="collapse" href="#curriculumDropdown" role="button" aria-expanded="false" aria-controls="curriculumDropdown">
+            CURRICULUM
+          </a>
+          <ul class="collapse" id="curriculumDropdown">
+            <li><a href="#">Primary</a></li>
+            <li><a href="#">Secondary</a></li>
+          </ul>
+        </div>
+      
+        <div class="dropdown">
+          <a class="dropdown-toggle" data-bs-toggle="collapse" href="#admissionsDropdown" role="button" aria-expanded="false" aria-controls="admissionsDropdown">
+            ADMISSIONS
+          </a>
+          <ul class="collapse" id="admissionsDropdown">
+            <li><a href="#">New Admission</a></li>
+            <li><a href="#">Enquiries</a></li>
+          </ul>
+        </div>
+      
+        <a href="#">STUDENT LIFE</a>
+        <a href="#">RESULTS</a>
+        <a href="#">OUR INFRASTRUCTURE</a>
+        <a href="#">JOIN US</a>
+        <a href="#">DOWNLOAD NEWSLETTER</a>
+        <a href="#">DOWNLOAD BROCHURE</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">ERP</a>
+      
+        <!-- Optional Logo at the Bottom -->
+        <!-- <div class="logo-container">
+          <img src="https://dpschhatarpur.org/assets/images/logo-f.png" alt="School Logo">
+        </div> -->
+      </div>
+      
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "15%";
+        }
+      
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0";
+        }
+      </script>
+      
+      <!-- Button to trigger the menu -->
+      <button onclick="openNav()" class="navbar-toggler">☰ Menu</button>
+    </div>
   </nav>
 
-  
-    <!-- Navbar End -->
+  <!-- Navbar End -->
 
 
-   
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/image1.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown"></h1>
-                                <p class="fs-5 text-white mb-4 pb-2"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/image1.jpeg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
+                <h1 class="display-3 text-white animated slideInDown"></h1>
+                <p class="fs-5 text-white mb-4 pb-2"></p>
+              </div>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/cricket.JPG" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown"></h1>
-                                <p class="fs-5 text-white mb-4 pb-2"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/338A8910.JPG" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown"></h1>
-                                <p class="fs-5 text-white mb-4 pb-2"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
-	
-    <div class="container">
-        <div class="row mydiv">
-            <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
-                <img src="https://img.lovepik.com/free-png/20220304/lovepik-creative-c4d-stereo-color-gradient-gallery-icon-png-image_wh1200.png" class="w-100" />
-                <a href="Gallery.html">
-                  <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                      <p class="text-white mb-0">Photo Gallary</p>
-                    </div>
-                  </div>
-                  <div class="hover-overlay">
-                    <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
-                  </div>
-                </a>
-              </div>
-              <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
-                <img src="https://i.pinimg.com/736x/e3/a1/7a/e3a17a19c96ad9ea6225fdac87548e3e.jpg" class="w-100" />
-                <a href="#!">
-                  <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                      <p class="text-white mb-0">Admissions Notice</p>
-                    </div>
-                  </div>
-                  <div class="hover-overlay">
-                    <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
-                  </div>
-                </a>
-              </div>
-              <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqnUHHFR5mSfNqVRvBWPEHTo8_50Hpm3XJXkr_6xzp282x3m8AiMT4JdPhSLwIaMkeJ8s&usqp=CAU" class="w-100" />
-                <a href="#!">
-                  <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                      <p class="text-white mb-0">Fee Structure</p>
-                    </div>
-                  </div>
-                  <div class="hover-overlay">
-                    <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
-                  </div>
-                </a>
-              </div>
-              <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsISy82UZb-8qAzPJeSIPiuC7uv1ir_PgF5UlnyXSrw&s" class="w-100" />
-                <a href="#!">
-                  <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                      <p class="text-white mb-0">School Calender</p>
-                    </div>
-                  </div>
-                  <div class="hover-overlay">
-                    <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
-                  </div>
-                </a>
-              </div>
-              <div class="bg-image ripple" style="max-width:14%;" data-mdb-ripple-color="light">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwlgt7wUqO_r7Xi2mAZgFL_fa8Brf-pYmpY9HOyU3vyg&s" class="w-100" />
-                <a href="#!">
-                  <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                      <p class="text-white mb-1 text-dark">School Transportation</p>
-                    </div>
-                  </div>
-                  <div class="hover-overlay">
-                    <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
-                  </div>
-                </a>
-              </div>
-            <div class="bg-image ripple" style="max-width:15%;" data-mdb-ripple-color="light">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThiRWg-sSEPHeTZIaZpoumKzXIYl2srVToukwSyzsVXXze44POZFYMkPQzsfGDLAgYwtY&usqp=CAU" class="w-100" />
-            <a href="#!">
-              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                  <p class="text-white mb-0">Student/Parent Portal</p>
-                </div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
-              </div>
-            </a>
           </div>
         </div>
-        
       </div>
-
-      
-      
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Links</h4>
-                    <a class="btn btn-link" href="">Virtual Tour</a>
-                    <a class="btn btn-link" href="">School Calander</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Reach </h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Siddhan Road, Lalitpur (UP)</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:08737906849">+91 87379 06849 (Click to call)</a></p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href = "mailto: contactus@royalacademy.net.in">contactus@royalacademy.net.in</a></p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/royalacademyltp?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@royalacademy2018"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/royalacademy.net.in?igsh=OXQyYTdoZXpmbW1q"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G1.jpg" alt=""></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G2.jpg" alt=""></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G3.jpg" alt=""></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G4.jpg" alt=""></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G6.jpg" alt=""></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G5.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Subscribe to be in touch.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/cricket.JPG" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
+                <h1 class="display-3 text-white animated slideInDown"></h1>
+                <p class="fs-5 text-white mb-4 pb-2"></p>
+              </div>
             </div>
+          </div>
         </div>
-        
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Royal Academy</a>, All Right Reserved.
-
-                        <!--/*** Thank you for your support. ***/-->
-                         <a class="border-bottom" href="https://htmlcodex.com"></a><br><br>
-                         <a class="border-bottom" href="https://themewagon.com"></a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="tel:09109019090">Developed by Neeraj Shrivastava </a>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/338A8910.JPG" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
+                <h1 class="display-3 text-white animated slideInDown"></h1>
+                <p class="fs-5 text-white mb-4 pb-2"></p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Carousel End -->
+
+  <div class="container">
+    <div class="row mydiv">
+      <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
+        <img
+          src="https://img.lovepik.com/free-png/20220304/lovepik-creative-c4d-stereo-color-gradient-gallery-icon-png-image_wh1200.png"
+          class="w-100" />
+        <a href="Gallery.html">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Photo Gallary</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
+        <img src="https://i.pinimg.com/736x/e3/a1/7a/e3a17a19c96ad9ea6225fdac87548e3e.jpg" class="w-100" />
+        <a href="#!">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Admissions Notice</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqnUHHFR5mSfNqVRvBWPEHTo8_50Hpm3XJXkr_6xzp282x3m8AiMT4JdPhSLwIaMkeJ8s&usqp=CAU"
+          class="w-100" />
+        <a href="#!">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Fee Structure</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image ripple" style="max-width:13%;" data-mdb-ripple-color="light">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsISy82UZb-8qAzPJeSIPiuC7uv1ir_PgF5UlnyXSrw&s"
+          class="w-100" />
+        <a href="#!">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">School Calender</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image ripple" style="max-width:14%;" data-mdb-ripple-color="light">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwlgt7wUqO_r7Xi2mAZgFL_fa8Brf-pYmpY9HOyU3vyg&s"
+          class="w-100" />
+        <a href="#!">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-1 text-dark">School Transportation</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
+        </a>
+      </div>
+      <div class="bg-image ripple" style="max-width:15%;" data-mdb-ripple-color="light">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThiRWg-sSEPHeTZIaZpoumKzXIYl2srVToukwSyzsVXXze44POZFYMkPQzsfGDLAgYwtY&usqp=CAU"
+          class="w-100" />
+        <a href="#!">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Student/Parent Portal</p>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Quick Links</h4>
+          <a class="btn btn-link" href="">Virtual Tour</a>
+          <a class="btn btn-link" href="">School Calander</a>
+          <a class="btn btn-link" href="">Privacy Policy</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">FAQs & Help</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Reach </h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Siddhan Road, Lalitpur (UP)</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:08737906849">+91 87379 06849 (Click to
+              call)</a></p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i><a
+              href="mailto: contactus@royalacademy.net.in">contactus@royalacademy.net.in</a></p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social"
+              href="https://www.facebook.com/royalacademyltp?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@royalacademy2018"><i
+                class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social"
+              href="https://www.instagram.com/royalacademy.net.in?igsh=OXQyYTdoZXpmbW1q"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Gallery</h4>
+          <div class="row g-2 pt-2">
+            <div class="col-4">
+              <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G1.jpg" alt=""></a>
+            </div>
+            <div class="col-4">
+              <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G2.jpg" alt=""></a>
+            </div>
+            <div class="col-4">
+              <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G3.jpg" alt=""></a>
+            </div>
+            <div class="col-4">
+              <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G4.jpg" alt=""></a>
+            </div>
+            <div class="col-4">
+              <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G6.jpg" alt=""></a>
+            </div>
+            <div class="col-4">
+              <a href="Gallery.html"><img class="img-fluid bg-light p-1" src="Gallery/G5.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Newsletter</h4>
+          <p>Subscribe to be in touch.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Royal Academy</a>, All Right Reserved.
+
+            <!--/*** Thank you for your support. ***/-->
+            <a class="border-bottom" href="https://htmlcodex.com"></a><br><br>
+            <a class="border-bottom" href="https://themewagon.com"></a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="tel:09109019090">Developed by Neeraj Shrivastava </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
