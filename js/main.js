@@ -106,4 +106,15 @@
     });
     
 })(jQuery);
+const carousel = document.querySelector('#imageCarousel');
+        const carouselInner = carousel.querySelector('.carousel-inner');
+
+        carousel.addEventListener('slide.bs.carousel', function (event) {
+            const activeItem = carousel.querySelector('.carousel-item.active');
+            const nextItem = event.direction === 'left' ? activeItem.nextElementSibling : activeItem.previousElementSibling;
+
+            // Move only one item at a time
+            const scrollAmount = nextItem ? nextItem.offsetLeft : 0;
+            carouselInner.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        });
 
