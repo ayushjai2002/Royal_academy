@@ -106,12 +106,35 @@
       
       <script>
         function openNav() {
-          document.getElementById("myNav").style.width = "15%";
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+        // For mobile screens (less than 768px), set width to 50%
+        document.getElementById("myNav").style.width = "50%";
+    } else {
+        // For larger screens, set width to 15%
+        document.getElementById("myNav").style.width = "15%";
+    }
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0"; // Close the menu
+}
+
+window.addEventListener('resize', function() {
+    const screenWidth = window.innerWidth;
+    
+    // Adjust the menu width dynamically if it is open
+    const navWidth = document.getElementById("myNav").style.width;
+    
+    if (navWidth !== "0px" && navWidth !== "") {
+        if (screenWidth < 768) {
+            document.getElementById("myNav").style.width = "50%";
+        } else {
+            document.getElementById("myNav").style.width = "15%";
         }
-      
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0";
-        }
+    }
+});
       </script>
       
       <!-- Button to trigger the menu -->
@@ -496,7 +519,7 @@
           </div>
           <div class="col-md-6 text-center text-md-end">
             <div class="footer-menu">
-              <a href="tel:09109019090">Developed by Neeraj Shrivastava </a>
+              <a href="https://www.alignflix.com/">Developed by Alignflix Technologies </a>
             </div>
           </div>
         </div>

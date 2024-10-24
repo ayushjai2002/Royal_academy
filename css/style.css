@@ -598,6 +598,7 @@ img{
     color: white;
     display: block;
     transition: 0.3s;
+    
   }
 
   .fullscreen-menu a:hover {
@@ -623,6 +624,25 @@ img{
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (max-width: 768px) {
+    .fullscreen-menu {
+        padding-top: 20px;
+        /* text-align: left; */
+        left: 50%;
+    }
+    
+    .fullscreen-menu a {
+        font-size: 18px;
+    }
+
+    /* Change logo size for mobile */
+    .logo img {
+        max-width: 80px;
+    }
+}
+
+
   
   .fullscreen-menu img {
     width: 100px;
