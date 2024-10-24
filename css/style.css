@@ -555,7 +555,7 @@
 .logo img{
     width: 150px;
     padding: 5px 10px;
-    background: #030013;
+    background: #f0f0f5;
 }
 .img-fluid{
     max-width: 100%;
@@ -739,7 +739,7 @@ img{
 
 .vision-section {
     position: relative;
-    background-image: url('https://www.shutterstock.com/image-vector/white-smoke-texture-isolated-on-260nw-2260287607.jpg'); /* Replace with the actual path to your background image */
+    background-image: url('../Gallery/visionbg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -783,7 +783,7 @@ img{
 /* Image Styling */
 .image-gallery-item img {
     width: 200px;
-    height: 150px;
+    /* height: 150px; */
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s;
