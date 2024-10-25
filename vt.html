@@ -45,62 +45,101 @@
     
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-2">
-            <h2 class="m-0 text-primary"><img class="img-fluid" src="img/logooo.png" alt="Royal Academy"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-       <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active text-primary" id="underr"><b>Home</b></a>
-				<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle text-primary" id="underr" data-bs-toggle="dropdown"><b>About us</b></a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="cp.html" class="dropdown-item" id="under">  Chair Person</a>
-                        <a href="s.html" class="dropdown-item" id="under">  Secretary</a>
-                        <a href="p.html" class="dropdown-item" id="under">  Principal</a>
-						<a href="i.html" class="dropdown-item" id="under">  Infrastructure</a>
-                        <a href="CBSE-Mandatory-Disclosure.html" class="dropdown-item" id="under">  CBSE Mandatory Disclosure</a>
-						<a href="vm.html" class="dropdown-item" id="under">  Vision & Mission</a>
-                    </div>
-                </div>
-				<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle text-primary" id="underr" data-bs-toggle="dropdown"><b>Academics</b></a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <a href="ppw.html" class="dropdown-item" id="under"> Pre Primary Wing</a>
-                        <a href="pw.html" class="dropdown-item" id="under">  Primary Wing</a>
-                        <a href="mw.html" class="dropdown-item" id="under">  Middle Wing</a>
-						<a href="sw.html" class="dropdown-item" id="under">  Senior Wing</a>
-						<a href="calander.html" class="dropdown-item" id="under">  School Calander</a>
-                        <a href="ppw.html" class="dropdown-item" id="under"> School Timing </a>
-                        <a href="pw.html" class="dropdown-item" id="under">  School Uniform</a>
-                        <a href="mw.html" class="dropdown-item" id="under"> Rules & Regulations</a>
-						<a href="sw.html" class="dropdown-item" id="under">  Feculty </a>
-						<a href="calander.html" class="dropdown-item" id="under">  Counselling Cell </a>
-                        <a href="sw.html" class="dropdown-item" id="under">  Board Results </a>
-						<a href="calander.html" class="dropdown-item" id="under">  Transfer Certificate </a>
-					</div>
-                </div>
-				<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle text-primary" id="underr" data-bs-toggle="dropdown"><b>Admissions</b></a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="procedure.html" class="dropdown-item" id="under">  Procedure</a>
-                        <a href="fee.html" class="dropdown-item" id="under">  Fee Structure</a>
-                        <a href="cnse-info.html" class="dropdown-item" id="under">  CBSE Information</a>
-						<a href="FAQ.html" class="dropdown-item" id="under">  FAQ</a>
-                    </div>
-                </div>
-                <a href="Gallery.html" class="nav-item nav-link text-primary" id="underr"><b>Gallery</b></a>
-                <!-- <a href="CBSE-Mandatory-Disclosure.html" class="nav-item nav-link active text-primary" id="underr"><b>CBSE Mandatory Disclosure</b></a> -->
-				<a href="vt.html" class="nav-item nav-link text-primary" id="underr"><b>Virtual Tour</b></a>
-				<a href="contactus.html" class="nav-item nav-link text-primary" id="underr"><b>Contact Us</b></a>
-                <a href=" https://currentdiary.com/app-for-school/login-school/ " class="nav-item nav-link text-primary" id="underr"><b>Parents Zone</b></a>
+    <nav class="navbar navbar-toggler navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo Section -->
+          <div class="col-md-2 col-sm-3 col-3">
+            <a href="index.html" class="logo">
+              <img src="Gallery/Royal's Logo.png" alt="DPS Chhatarpur (Madhya Pradesh)" class="img-fluid">
+            </a>
+          </div>
+          <!-- Navbar Content -->
+          <div id="myNav" class="fullscreen-menu">
+            <span class="close-btn" onclick="closeNav()">&times;</span>
+          
+            <a href="#">ABOUT US</a>
+            <a href="#">OUR SCHOOL</a>
+            <!-- <a href="#">PROMOTERS MESSAGE</a> -->
+            <a href="p.html">PRINCIPAL MESSAGE</a>
+            <!-- <a href="#">FROM VICE PRINCIPAL DESK</a> -->
+            <a href="#">FACULTY</a>
+            <a href="CBSE-Mandatory-Disclosure.html">MANDATORY DISCLOSURE</a>
+          
+            <div class="dropdown">
+              <a class="dropdown-toggle" data-bs-toggle="collapse" href="#curriculumDropdown" role="button" aria-expanded="false" aria-controls="curriculumDropdown">
+                CURRICULUM
+              </a>
+              <ul class="collapse" id="curriculumDropdown">
+                <li><a href="pw.html">Primary</a></li>
+                <li><a href="mw.html">Middle</a></li>
+                <li><a href="sw.html">Secondary</a></li>
+              </ul>
             </div>
-            
+          
+            <div class="dropdown">
+              <a class="dropdown-toggle" data-bs-toggle="collapse" href="#admissionsDropdown" role="button" aria-expanded="false" aria-controls="admissionsDropdown">
+                ADMISSIONS
+              </a>
+              <ul class="collapse" id="admissionsDropdown">
+                <li><a href="procedure.html">Procedure</a></li>
+                <li><a href="fee.html">Fee Structure</a></li>
+                <li><a href="cnse-info.html">CBSC Information</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+              </ul>
+            </div>
+          
+            <!-- <a href="#">STUDENT LIFE</a> -->
+            <!-- <a href="#">RESULTS</a> -->
+            <a href="i.html">OUR INFRASTRUCTURE</a>
+            <!-- <a href="#">JOIN US</a> -->
+            <!-- <a href="#">DOWNLOAD NEWSLETTER</a> -->
+            <!-- <a href="#">DOWNLOAD BROCHURE</a> -->
+            <a href="contactus.html">CONTACT US</a>
+            <a href="#">ERP</a>
+          
+            <!-- Optional Logo at the Bottom -->
+            <!-- <div class="logo-container">
+              <img src="https://dpschhatarpur.org/assets/images/logo-f.png" alt="School Logo">
+            </div> -->
+          </div>
+          
+          <script>
+            function openNav() {
+        const screenWidth = window.innerWidth;
+    
+        if (screenWidth < 768) {
+            // For mobile screens (less than 768px), set width to 50%
+            document.getElementById("myNav").style.width = "50%";
+        } else {
+            // For larger screens, set width to 15%
+            document.getElementById("myNav").style.width = "15%";
+        }
+    }
+    
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0"; // Close the menu
+    }
+    
+    window.addEventListener('resize', function() {
+        const screenWidth = window.innerWidth;
+        
+        // Adjust the menu width dynamically if it is open
+        const navWidth = document.getElementById("myNav").style.width;
+        
+        if (navWidth !== "0px" && navWidth !== "") {
+            if (screenWidth < 768) {
+                document.getElementById("myNav").style.width = "50%";
+            } else {
+                document.getElementById("myNav").style.width = "15%";
+            }
+        }
+    });
+          </script>
+          
+          <!-- Button to trigger the menu -->
+          <button onclick="openNav()" class="navbar-toggler">☰ Menu</button>
         </div>
-    </nav>
+      </nav>
     <!-- Navbar End -->
 
 
